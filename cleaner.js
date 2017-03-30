@@ -18,6 +18,7 @@ if (Meteor.isServer) {
     var collections = getCollections();
     var appCollections = _.reject(collections, function (col) {
       return col.collectionName.indexOf('velocity') === 0 ||
+        col.collectionName.indexOf('__kd') === 0 ||
         excludedCollections.indexOf(col.collectionName) !== -1;
     });
 
