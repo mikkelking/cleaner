@@ -57,6 +57,6 @@ resetDatabase({excludedCollections: ['myCollection']}, callback);
 ```javascript
 var cleaner = Package['xolvio:cleaner'];
 
-// delete all collections except myCollection with optional callback
+// delete all collections except myCollection and __kd* (kadira collections) with optional callback
 cleaner.resetDatabase({excludedCollections: ['myCollection']}, callback);
 ```
